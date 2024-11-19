@@ -1,0 +1,185 @@
+/* General reset */
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1e1e; /* Dark background */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Center container */
+  .container {
+    text-align: center;
+    animation: fadeInScale 2s ease-in-out; /* Animation for container */
+  }
+  
+  /* h1 Styling */
+  #announcement {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow effect */
+    animation: bounceIn 2s ease-in-out infinite alternate; /* Continuous animation */
+  }
+  
+  /* Animations */
+  
+  /* Smooth fade-in and scale effect */
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Bounce animation for h1 */
+  @keyframes bounceIn {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  
+  /* h1 styling */
+  #announcement {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+#interactiveButton {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+#interactiveButton:hover {
+  background: #ff3b3f;
+  transform: scale(1.1);
+}
+
+/* Active (click) effect */
+#interactiveButton:active {
+  background: #e63946;
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+  /* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background: #121212; /* Dark theme background */
+    color: #ffffff; /* Light text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in animation */
+  }
+  
+  /* Announcement styling */
+  #announcement {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+    animation: slideIn 1.5s ease-out; /* Slide-in animation for the title */
+  }
+  
+  /* Description styling */
+  #description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #aaaaaa; /* Subtle text color for description */
+    opacity: 0;
+    animation: fadeInText 2s 1.5s ease-in-out forwards; /* Delayed fade-in */
+  }
+  
+  /* Button styling */
+  #interactiveButton {
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #1e88e5; /* Primary blue color */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Button shadow */
+  }
+  
+  #interactiveButton:hover {
+    transform: scale(1.1); /* Enlarges the button */
+    background: #1565c0; /* Darker blue on hover */
+  }
+  
+  #interactiveButton:active {
+    transform: scale(1); /* Reverts size on click */
+    background: #0d47a1; /* Even darker blue for active state */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
